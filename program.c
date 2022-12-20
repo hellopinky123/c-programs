@@ -1,7 +1,11 @@
 #include<stdio.h>
 int main() {
+    int a=4;
+    int b=3;
+    int c=a+b;
+    printf("%d", c);
 
-    printf("my name is kalpana dash");
+    
     return 0;
     
 }
