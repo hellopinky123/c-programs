@@ -1,17 +1,17 @@
 #include<stdio.h>
-int main() {//swapping of two nos without using 3rd variable
+int main() {
 int a;
 int b;
+int c;
+int max;
 printf("enter a");
 scanf("%d",&a);
 printf("enter b");
 scanf("%d", &b);
-
-a=a+b;
-b=a-b;
-a=a-b;
-
-printf("%d\n%d\n", a, b);
-
-
+printf("enter c");
+scanf("%d", &c);
+max=(a>b)?((a>c)?a:c):((b>c)?b:c);
+printf("%d", max);
 }
+
+
