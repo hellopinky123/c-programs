@@ -1,23 +1,20 @@
 #include<stdio.h>
 
-
 int main() {
-
-    int n1,n2,i,min,hcf=1;
+    int i=1,num,sum=0;
     printf("enter any no :");
-    scanf("%d %d" ,&n1, &n2);
+    scanf("%d", num);
+    while(i<num) {
+        if(num%i==0) {
+            sum=sum+i;
+            i++;
 
-    min=(n1<n2) ? n1 : n2;
-
-    i=1;
-    while(i<=min) {
-        i++;
-        if(n1%i==0 && n2%i==0) {
-            hcf=i;
+        }
+        if(sum==num) {
+            printf("%d is perfect no");
+        }
+        else {
+            printf("%d id not perfect no");
         }
     }
-    printf("hcf between this is %d %d is %d\n ",n1,n2,hcf);
-
-
-
 }
