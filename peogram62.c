@@ -1,0 +1,18 @@
+#include<stdio.h>//to print * in pyramid pattern
+
+int main() {
+    int i,j,rows;
+    printf("enter no of rows :");
+    scanf("%d", &rows);
+
+    for(i=1;i<=rows;i++) {
+        for(j=i;j<=rows;j++) {
+            printf(" ");
+        }
+        for(j=1;j<=(2*i-1);j++) {
+            printf("*");
+        }
+        printf("\n");
+    }
+    
+}
